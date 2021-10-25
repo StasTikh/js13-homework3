@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="./assets/js/app.js"> type="module"</script>
+    <script src="./assets/js/IsNumber.js"></script>
+    <title>Homework 3</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-left mt-5">Ukraine INN validator</h1>
+        <label class="form-label">Enter your INN</label>
+        <input type="text" class="form-control w-25" id="innInput" oninput="isNumber()" placeholder="1234567890">
+        <div id="innHelp" class="form-text w-50 text-danger" >
+        
+        </div>
+        <button type="button" onclick="innCalc()" class="btn btn-light mt-2 border border-2">Check</button>
+        
+        <table class="table table-borderless w-25 mt-3" id="infoTable">
+            <tr>
+
+            </tr>
+            <tr>
+                <td>You date of birth:</td>
+                <td id="dOb"></td>
+            </tr>
+            <tr>
+                <td>Your full years:</td>
+                <td id="years"></td> 
+            </tr>
+            <tr>
+                <td>Your gender:</td>
+                <td id="gender"></td>
+            </tr>
+        </table>
+        
+
+    </div>
+</body>
+</html>
