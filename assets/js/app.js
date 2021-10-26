@@ -21,9 +21,9 @@ function innCalc() {
       infoTable.style.display = "none";
     } else {
       infoTable.style.display = "block";
-      let birthCheck = inn.substring(0, 5);
-      let date = new Date(1899, 12, 31);
-      date.setDate(date.getDate() + (birthCheck-31));
+      let birthCheck = +inn.substring(0, 5);
+      let date = new Date(1900, 0, 0);
+      date.setDate(date.getDate() + (birthCheck));
     
       let now = new Date(); 
       let today = new Date(now.getFullYear(), now.getMonth(), now.getDate()); 
